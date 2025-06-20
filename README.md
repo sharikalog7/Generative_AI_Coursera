@@ -1,21 +1,109 @@
-# Generative_AI_Coursera
+# Coursera - Generative AI with Large Language Models  
 
+## Overview
 
-Generative AI with Large Language Models
+This repository contains my work for the Coursera course labs on Generative AI for Dialogue Summarization (Aug 2023 – Sep 2023). The labs explore prompt engineering, model fine-tuning, and reinforcement learning techniques to optimize dialogue summarization using state-of-the-art Large Language Models (LLMs).
 
+---
 
-Generative AI Use Case: Summarize DialogueGenerative AI Use Case: Summarize Dialogue
+## Table of Contents
 
-I delved into dialogue summarization tasks employing generative AI. Through meticulous experimentation, I investigated the influence of input text on model output. Engaging in prompt engineering, I directed the model towards efficiently fulfilling the task at hand. By analyzing zero-shot, one-shot, and few-shot inferences, I initiated the process of prompt engineering, showcasing its potential to optimize the generative output of Large Language Models.
+- [Lab 1: Dialogue Summarization with Generative AI](#lab-1-dialogue-summarization-with-generative-ai)
+- [Lab 2: Fine-Tune a Generative AI Model](#lab-2-fine-tune-a-generative-ai-model)
+- [Lab 3: RLHF and PEFT for Less-Toxic Summaries](#lab-3-rlhf-and-peft-for-less-toxic-summaries)
+- [Running on AWS SageMaker](#running-on-aws-sagemaker)
+- [Skills & Technologies](#skills--technologies)
+- [References](#references)
 
+---
 
-Fine-Tune a Generative AI Model for Dialogue SummarizationFine-Tune a Generative AI Model for Dialogue Summarization
+## Lab 1: Dialogue Summarization with Generative AI
 
-In my recent project, I undertook the task of refining an existing Longformer-Encoder-Decoder model from Hugging Face to enhance dialogue summarization capabilities. Leveraging the FLAN-T5 model, renowned for its high-quality instruction-tuned architecture, I aimed to elevate text summarization performance.
+- Explored dialogue summarization tasks using generative AI.
+- Investigated the influence of input text and prompt engineering on model output.
+- Analyzed zero-shot, one-shot, and few-shot inference to optimize LLM performance.
+- Demonstrated how prompt engineering can enhance the quality and efficiency of dialogue summarization.
 
-To achieve this, I embarked on a comprehensive fine-tuning process, meticulously adjusting parameters to optimize dialogue summarization outcomes. Employing the ROUGE metrics for evaluation, I rigorously assessed the efficacy of the refined model and iteratively refined it for enhanced performance.
+---
 
-In addition to conventional fine-tuning, I explored Parameter Efficient Fine-Tuning (PEFT) techniques. Despite observing slightly lower performance metrics initially, I discovered that the benefits of PEFT significantly outweighed any minor drawbacks. This approach not only streamlined the fine-tuning process but also demonstrated remarkable improvements in dialogue summarization efficiency.
+## Lab 2: Fine-Tune a Generative AI Model
 
-Through this project, I showcased my proficiency in advanced NLP techniques, model fine-tuning methodologies, and a commitment to continuous improvement in AI-driven text summarization applications.In my recent project, I undertook the task of refining an existing Longformer-Encoder-Decoder model from Hugging Face to enhance dialogue summarization capabilities. Leveraging the FLAN-T5 model, renowned for its high-quality instruction-tuned architecture, I aimed to elevate text summarization performance. To achieve this, I embarked on a comprehensive fine-tuning process, meticulously adjusting parameters to optimize dialogue summarization outcomes. Employing the ROUGE metrics for evaluation, I rigorously assessed the efficacy of the refined model and iteratively refined it for enhanced performance. In addition to conventional fine-tuning, I explored Parameter Efficient Fine-Tuning (PEFT) techniques. Despite observing slightly lower performance metrics initially, I discovered that the benefits of PEFT significantly outweighed any minor drawbacks. This approach not only streamlined the fine-tuning process but also demonstrated remarkable improvements in dialogue summarization efficiency. Through this project, I showcased my proficiency in advanced NLP techniques, model fine-tuning methodologies, and a commitment to continuous improvement in AI-driven text summarization applications.
+- Fine-tuned the Longformer-Encoder-Decoder model (Hugging Face) and FLAN-T5 for improved dialogue summarization.
+- Employed ROUGE metrics for evaluating summarization quality.
+- Experimented with Parameter Efficient Fine-Tuning (PEFT) to streamline the process.
+- Showcased iterative fine-tuning and evaluation for continuous improvement.
+
+---
+
+## Lab 3: RLHF and PEFT for Less-Toxic Summaries
+
+- Utilized FLAN-T5 and Meta AI's hate speech reward model to reduce toxicity in generated summaries.
+- Applied Proximal Policy Optimization (PPO) reinforcement learning for safer content generation.
+- Demonstrated the use of RLHF (Reinforcement Learning from Human Feedback) and PEFT for responsible AI.
+
+---
+
+## Running on AWS SageMaker
+
+### 1. Launch a SageMaker Notebook Instance
+
+- Go to AWS SageMaker Console.
+- Click **Notebook instances** > **Create notebook instance**.
+- Choose an instance type (e.g., `ml.t3.medium` for CPU, `ml.p3.2xlarge` for GPU).
+
+### 2. Open the Jupyter Notebook
+
+- Once the instance is running, click **Open Jupyter**.
+
+### 3. Change the Kernel
+
+- In Jupyter, go to the notebook menu:  
+  **Kernel > Change kernel > [Choose Python 3 (Data Science) or PyTorch/TensorFlow (GPU)]**
+
+### 4. Select CPU or GPU
+
+- The instance type determines CPU/GPU usage:
+    - For **CPU**, use a CPU-based instance (e.g., `ml.t3.medium`).
+    - For **GPU**, use a GPU-based instance (e.g., `ml.p3.2xlarge`).
+- To switch, stop your instance, change the instance type, and restart.
+
+### 5. Upload and Run Notebooks
+
+- Upload your lab notebooks (`.ipynb`) to the Jupyter environment.
+- Install required packages:
+    ```
+    !pip install transformers datasets peft accelerate rouge-score
+    ```
+- Run each cell step by step.
+
+---
+
+## Skills & Technologies
+
+- Generative AI
+- Prompt Engineering
+- Model Fine-Tuning (Longformer, FLAN-T5)
+- Parameter Efficient Fine-Tuning (PEFT)
+- Reinforcement Learning (PPO, RLHF)
+- Toxicity Mitigation (Meta AI Hate Speech Reward Model)
+- AWS SageMaker (CPU/GPU)
+
+---
+
+## References
+
+- [Hugging Face Transformers](https://huggingface.co/transformers/)
+- [AWS SageMaker Documentation](https://docs.aws.amazon.com/sagemaker/)
+- [Meta AI Hate Speech Reward Model](https://github.com/facebookresearch/)
+
+---
+
+---
+
+**Author:** Sharika Loganathan  
+**Course:** Coursera - Generative AI with Large Language Models  
+**Issued:** Aug 2023  
+**Credential ID:** EEZS92GAYUAZ  
+[Show Credential](https://www.coursera.org/account/accomplishments/certificate/EEZS92GAYUAZ)
+
 
